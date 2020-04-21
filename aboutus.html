@@ -17,6 +17,41 @@
 
 </head>
 <body>
+
+
+<!-- 
+
+You also need to add the class bg-dark additionally to navbar-dark.
+
+navbar-dark basically just determines what color the text should be i.e. light text for a dark-background navbar and dark text for a light-colored navbar.
+
+bg-dark then determines the actual background-color of the navbar. But other colors would work just as well. For example, bg-primary or bg-danger would work well with navbar-dark. -->
+
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbarr">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a>
+            <!-- mr-auto right margin set as possible, content should be pushed as left as possible -->
+            <div class="collapse navbar-collapse" id="Navbarr">
+                <ul class="navbar-nav mr-auto">
+                <!-- nav-item this allow these link items to display horizontlly as list in navigation bar ,nav-link allows a tag to repsent a link-->
+                <!-- active means you are on that particular page -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a>    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
 	
 	 <header class="jumbotron">
 	 	<div class="container">
@@ -95,7 +130,7 @@
      		<div class="col-4 offset-1 col-sm-2">
      			<h5>Links</h5>
      			<ul class="list-unstyled">
-     				<li><a href="#">Home</a></li>
+     				<li><a href="./index.html">Home</a></li>
      				<li><a href="#">work</a></li>
      				<li><a href="#">about</a></li>
      				<li><a href="#">menu</a></li>

@@ -33,17 +33,24 @@ bg-dark then determines the actual background-color of the navbar. But other col
     
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbarr">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
             <!-- mr-auto right margin set as possible, content should be pushed as left as possible -->
-            <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="Navbarr">
+                <ul class="navbar-nav mr-auto">
                 <!-- nav-item this allow these link items to display horizontlly as list in navigation bar ,nav-link allows a tag to repsent a link-->
                 <!-- active means you are on that particular page -->
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a>    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 
-            </ul>
+                </ul>
+            </div>
         </div>
         
     </nav>
@@ -109,7 +116,7 @@ bg-dark then determines the actual background-color of the navbar. But other col
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
