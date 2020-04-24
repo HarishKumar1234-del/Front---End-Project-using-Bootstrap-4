@@ -51,6 +51,7 @@
     <div class="container">
         <div class="row">
             <ol class="col-12 breadcrumb">
+                <!-- breadcrum-item is for padding and margin  -->
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contact Us</li>
             </ol>
@@ -97,8 +98,10 @@
             <div class="col-12 col-md-9">
                 <!-- Form goes here -->
                 <form>
+                    <!-- form group is for margin and padding -->
                     <div class="form-group row">
-                        <!-- col-form-label allows us to specify the label here -->
+                        <!-- col-form-label allows us to specify the label here-->
+                        <!-- col-form-label is for padding and margin -->
                         <label for="firstname" class="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
@@ -135,15 +138,22 @@
 
                     <div class="form-group row">
                         <!-- // offset-md-2 means push 2 col to right -->
+                        <!-- 8 col occupy -->
                         <div class="col-md-6 offset-md-2">
+                            <!-- form-check is for padding and margin -->
                             <div class="form-check">
+                                <!-- form-check-input push check to the left -->
                                 <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                <!-- form-chekc-label is for appropriate margin and padding for check -->
+                                <!-- but in this case it does not do anything -->
                                 <label class="form-check-label" for="approve">
                                     <strong>May we contact you?</strong>
                                 </label>
                             </div>
                         </div>
 
+                        <!-- 4 col occupy -->
+                        <!-- col-md-3 and offset-md-1 conventional style not offset-md-1 and col-md-3 -->
                         <div class="col-md-3 offset-md-1">
                             <select class="form-control">
                                 <option>Tel.</option>
@@ -160,6 +170,7 @@
                         </div>
                     </div>
 
+                    <!-- use form-check to correct the padding and margin -->
                     <div class="form-group row">
                         <div class="offset-md-2 cold-md-10">
                             <button type="submit" class="btn btn-primary">
